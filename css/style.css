@@ -1,0 +1,928 @@
+/* ----------------------------------------------------------------
+     [  Start Basics ]
+-----------------------------------------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/*----style heading one ----*/
+h1 {
+    font-family: ;
+    font-size: 60px;
+    font-weight: ;
+    font-style: normal;
+    letter-spacing: ;
+    line-height: ;
+}
+
+
+/*----style heading two ----*/
+h2 {
+    font-family: ;
+    font-size: 36px;
+    font-weight: ;
+    font-style: normal;
+    letter-spacing: ;
+    line-height: ;
+}
+
+
+/*----style heading three ----*/
+h3 {
+    font-family: ;
+    font-size: 18px;
+    font-weight: ;
+    font-style: normal;
+    letter-spacing: ;
+    line-height: ;
+}
+
+/*----style heading four ----*/
+h4 {
+    font-family: ;
+    font-size: 22px;
+    font-weight: ;
+    font-style: normal;
+    letter-spacing: ;
+    line-height: ;
+}
+
+
+/*----style body text----*/
+p {
+    font-family: ;
+    font-size: 16px;
+    font-weight: ;
+    font-style: normal;
+    letter-spacing: ;
+    line-height: ;
+}
+
+
+
+/*----style image over all----*/
+img {
+    width: 100%;
+    height: auto;
+    line-height: 0px;
+    padding: 20px;
+    position: relative;
+}
+
+hr {
+    border-color: #a50400;
+    border-top: 4px solid;
+}
+
+
+/*----style section name with heading three----*/
+.section-title {
+    width: auto;
+    border: 2px solid #B400FF;
+    padding: 5px 20px;
+    border-radius: 100px;
+}
+
+
+/*----style all the page and index----*/
+.index-page {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+/*----style Icon color size and shape----*/
+.icon {
+    color: #B400FF;
+    display: inline-flex;
+    padding-right: 10px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.social-icon {
+    position: relative;
+}
+
+.fab {
+    border-radius: 100%;
+    color: #B400FF;
+    overflow-x: hidden;
+}
+
+
+/*----style list----*/
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ----------------------------------------------------------------
+     [ End Basics ]
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+     [ Start Navbar ]
+-----------------------------------------------------------------*/
+.nav {
+    z-index: 100000 !important;
+    position: relative;
+}
+
+.nav-item {
+    color: #000;
+    line-height: 15px;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.nav-item a {
+    color: #000;
+    padding: 5px 25px;
+    line-height: 15px;
+}
+
+.nav-item .active {
+    background-color: #B200FD;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.nav-item a:hover {
+    background-color: #B200FD;
+    color: #fff !important;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------------------------
+     [ End Navbar ]
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+     [ Start hero section ]
+-----------------------------------------------------------------*/
+
+/*----style Hero section Background fixed perellaxe----*/
+
+#hero-image {
+    z-index: 99999;
+    margin-top: -100px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center, top;
+    background-repeat: no-repeat;
+    /* background-attachment:  fixed !important; */
+}
+
+/*----hero image Description----*/
+.slogan {
+    margin-top: 90%;
+}
+
+/*---michel jhon photo---*/
+.john img {
+    width: 410px;
+    height: 499;
+    margin-top: 40%;
+    /* position: relative; */
+    float: right;
+    padding: 0px;
+}
+
+/* ----------------------------------------------------------------
+     [ Start About Me ]
+-----------------------------------------------------------------*/
+
+/*----style about section Background fixed perellaxe----*/
+#about {
+    margin-top: 100px;
+    min-height: 600px;
+    width: 100%;
+    background-image: url(../img/about-bg.jpg);
+    background-size: cover;
+    background-position: center, top;
+    background-repeat: no-repeat;
+    /* background-attachment:  fixed !important; */
+}
+
+/*----style bio pragraph----*/
+.short-bio {
+    margin-top: 30px;
+    display: inline-flex;
+    position: relative;
+    text-align: center;
+}
+
+.left-bio {
+    width: 150px;
+    margin-right: 22px;
+    font-weight: 900;
+}
+
+/*----style verticle line in the mid positon between left and right bio list----*/
+.mid-bio {
+    height: 149px;
+    width: 3px;
+    background-color: #B400FF
+}
+
+.right-bio {
+    width: 150px;
+    text-align: left;
+    margin-left: 22px;
+}
+
+
+/* ----------------------------------------------------------------
+     [ start skill Content ]
+-----------------------------------------------------------------*/
+
+/*----style skill section Background fixed perellaxe----*/
+#Skill {
+    min-height: 846px;
+    width: 100%;
+    background-image: url(../img/skill.jpg);
+    background-size: cover;
+    background-position: center, top;
+    background-repeat: no-repeat;
+}
+
+.about-progress-item {
+
+    text-align: left;
+}
+
+
+/*----style unloaded progress bar----*/
+.progressbar {
+    height: 10px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    position: relative;
+    background-color: #C2C2C2;
+    border-radius: 5px !important;
+}
+
+/*----style loaded progress bar----*/
+.proggress {
+    height: 10px !important;
+    width: 10px;
+    border-radius: 5px !important;
+}
+
+/*----style progress percentage text----*/
+.percentCount {
+    float: right;
+    margin-top: -36px;
+    clear: both;
+    font-weight: bold;
+    font-family: Arial
+}
+
+/* ----------------------------------------------------------------
+     [ End skill Content ]
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+     [ Start Experience Content ]
+-----------------------------------------------------------------*/
+
+/*----style experence section Background fixed perellaxe----*/
+#experience {
+    min-height: 548px;
+    width: 100%;
+    background-image: url(../img/Experience.jpg);
+    background-size: cover;
+    background-position: center, top;
+    background-repeat: no-repeat;
+}
+
+/*----style experence description Pragraph----*/
+.experience-text {
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------
+     [ End Experience Content ]
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+     [ start  education Content ]
+-----------------------------------------------------------------*/
+
+/*----style education section Background fixed perellaxe----*/
+#education {
+    min-height: 415px;
+    width: 100%;
+    background-image: url(../img/education.jpg);
+    background-size: cover;
+    background-position: center, top;
+    background-repeat: no-repeat;
+}
+
+/*----style education time line----*/
+.timeline-container {
+    display: inline-flex;
+    position: relative;
+    text-align: center;
+}
+
+/*----style education timeline left content----*/
+.container-left {
+    width: 49%;
+    margin-right: 22px;
+    margin-top: 22px;
+}
+
+/*----style education timeline violate verticle line----*/
+.timeline {
+    width: 5px;
+    background-color: #B400FF;
+}
+
+/*----style education timeline mid circle or round shape on the violate verticle line----*/
+.container-left:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #B400FF;
+    top: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    left: 49%;
+}
+
+/*----style education timeline right content----*/
+.container-right {
+    width: 49%;
+    text-align: left;
+    margin-left: 22px;
+    margin-top: 22px;
+}
+
+/* ----------------------------------------------------------------
+     [ end  education Content ]
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+     [ Start Portfolio Content ]
+-----------------------------------------------------------------*/
+
+/*----style Portfolio section Background fixed perellaxe----*/
+#portfolio {
+    min-height: 881px;
+    width: 100%;
+    background-image: url(../img/portfolio.jpg);
+    background-size: cover;
+    background-position: center, top;
+    background-repeat: no-repeat;
+}
+
+/*----style Portfolio-container ----*/
+.pf-container {
+    margin-top: 100px;
+}
+
+/*----style Portfolio grid section----*/
+
+
+/*----style Portfolio grid or categories button group----*/
+.pf-button-group {
+    margin-top: 60px;
+}
+
+.pf-button {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    border-radius: 15px !important;
+    /* background-color: rgb(177, 0, 253);
+    color: rgb(2, 2, 2); */
+    border: none;
+
+}
+
+.pf-button:hover {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    border-radius: 15px !important;
+    background-color: rgb(177, 0, 253);
+    color: rgb(2, 2, 2);
+    border: none;
+
+}
+
+/*----style Portfolio grid or categories button what is active----*/
+.pf-button .active {
+    background-color: #B200FD !important;
+    color: #fff !important;
+    border-radius: 15px !important;
+}
+
+/*----style Portfolio grid views split stack slide----*/
+.element-item {
+    display: flex;
+    width: 261px;
+    height: 191px;
+    padding: 8px;
+}
+
+/*----style Portfolio grid image border frame etc----*/
+.element-item img {
+    border-radius: 15px;
+    box-shadow: 3px 5px 7px 0px rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    position: center;
+}
+
+/*----style Portfolio grid image mouseover----*/
+.element-item img:hover {
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 7px 5px rgb(255, 255, 255);
+    padding: 0px;
+    display: flex;
+    z-index: 1;
+}
+
+/* ----------------------------------------------------------------
+     [ End Portfolio Content ]
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+     [ Start testimonials ]
+-----------------------------------------------------------------*/
+
+/*----style testimonials or happy client section Background fixed perellaxe----*/
+#testimonial {
+    min-height: 512px;
+    width: 100%;
+    background-image: url(../img/testimonials.jpg);
+    background-size: cover;
+    background-position: top, right;
+    background-repeat: no-repeat;
+    height: 512px;
+}
+
+.testimonial_slide {
+    margin-top: 50px;
+}
+
+
+.qoute {
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+    ;
+    text-align: left;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    box-shadow: 3px 5px 7px 0 rgba(0, 0, 0, 0.2);
+    display: block;
+
+}
+
+.qoute-top {
+    display: flex;
+    position: relative;
+
+
+
+}
+
+.qoute img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.qoute-top-tilte {
+    width: 74%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.qoute-bottom {
+    position: relative;
+    width: 100%;
+    display: inline;
+
+}
+
+
+.testimonial_slide {
+    display: flex;
+}
+
+.owl-carousel .owl-item .qoute-top-img img {
+    display: block;
+    width: 100px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    background: 0 0;
+    color: #B200FD !important;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav .text-danger {
+    color: #B200FD !important;
+}
+
+
+/* ----------------------------------------------------------------
+     [ End testimonials ]
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+     [ start  contact Content ]
+-----------------------------------------------------------------*/
+#contact {
+    min-height: 446px;
+    width: 100%;
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-position: center, top;
+    background-repeat: no-repeat;
+}
+
+.contact-menu {
+    margin-top: 72px;
+}
+
+.contact_left {
+    text-align: left;
+}
+
+.contact_left .icon {
+    margin-right: 23px;
+    margin-top: 10px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact_left li {
+    text-align: left;
+    display: inline-flex;
+}
+
+.contact_right {
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+}
+
+.input-form {
+    float: left;
+}
+
+.input-field {
+    width: 337px;
+    height: 39px;
+    margin-bottom: 19px;
+    border: 2px solid #B200FD;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.fmessage {
+    max-width: 100% !important;
+}
+
+#fmessage {
+    width: 337px;
+    height: 156px;
+}
+
+.contact-form-btn {
+    background-color: #B200FD;
+    border: none;
+    border-radius: 15px;
+    padding: 0 20px;
+    text-align: right;
+    float: right;
+}
+
+#footer {
+    background-color: #DEDEDE;
+}
+
+
+
+
+@media only screen and (max-width: 468px) {
+
+    /* For mobile phones: */
+    [class*="col-6"] {
+        width: 100%;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+
+    }
+
+    h1 {
+        font-family: ;
+        font-size: 30px;
+        font-weight: ;
+        font-style: normal;
+        letter-spacing: ;
+        line-height: ;
+    }
+
+    h2 {
+        font-family: ;
+        font-size: 20px;
+        font-weight: ;
+        font-style: normal;
+        letter-spacing: ;
+        line-height: ;
+    }
+
+    h3 {
+        font-family: ;
+        font-size: 20px;
+        font-weight: ;
+        font-style: normal;
+        letter-spacing: ;
+        line-height: ;
+    }
+
+    h4 {
+        font-family: ;
+        font-size: 40px;
+        font-weight: ;
+        font-style: normal;
+        letter-spacing: ;
+        line-height: ;
+    }
+
+    .index-page {
+        padding-top: 20px;
+        margin-top: 50px;
+
+    }
+
+    #hero-image {
+        z-index: 99999;
+        margin-top: -100px;
+        min-height: 700px;
+        width: 100%;
+        background-image: url(../img/hero.jpg);
+        background-size: contain;
+        background-position: left, top;
+    }
+
+    #hero-image .row {
+        display: inline;
+    }
+
+    #hero-image .col-6 {
+        max-width: 100%;
+    }
+
+    .slogan {
+        margin-top: 25%;
+    }
+
+    .john img {
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+        float: right;
+        padding: 0px;
+    }
+
+    #about {
+        min-height: 534px;
+        width: 100%;
+        background-image: url(../img/about-bg.jpg);
+        background-size: contain;
+        background-position: left, top;
+        background-repeat: no-repeat;
+        /* background-attachment:  fixed !important; */
+    }
+
+    #Skill {
+        min-height: 750px;
+        width: 100%;
+        background-image: url(../img/skill.jpg);
+        background-size: contain;
+        background-position: left, top;
+        background-repeat: no-repeat;
+    }
+
+    #experience {
+        min-height: 548px;
+        width: 100%;
+        background-image: url(../img/Experience.jpg);
+        background-size: contain;
+        background-position: right, top;
+        background-repeat: no-repeat;
+    }
+
+    #education {
+        min-height: 415px;
+        width: 100%;
+        background-image: url(../img/education.jpg);
+        background-size: contain;
+        background-position: center, top;
+        background-repeat: no-repeat;
+    }
+
+    /*----style education time line----*/
+    .timeline-container {
+        display: inline;
+        position: relative;
+        text-align: center;
+    }
+
+    /*----style education timeline left content----*/
+    .container-left {
+        width: 100%;
+        margin-right: 22px;
+        margin-top: 22px;
+        text-align: center !important;
+    }
+
+    /*----style education timeline violate verticle line----*/
+    .timeline {
+        width: 5px;
+        background-color: #B400FF;
+        display: none;
+    }
+
+    /*----style education timeline mid circle or round shape on the violate verticle line----*/
+    .container-left:after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: #B400FF;
+        top: 50%;
+        border-radius: 50%;
+        z-index: 1;
+        left: 49%;
+        display: none;
+    }
+
+    /*----style education timeline right content----*/
+    .container-right {
+        width: 100%;
+        text-align: center;
+        margin-left: 22px;
+        margin-top: 22px;
+    }
+
+    #portfolio {
+        height: unset;
+        width: 100%;
+        background-image: url(../img/portfolio.jpg);
+        background-repeat: repeat;
+    }
+
+    .pf-button-group {
+        margin-top: 41px;
+        margin-bottom: 32px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #testimonial {
+        min-height: 700px;
+        width: 100%;
+        background-image: url(../img/testimonials.jpg);
+        background-size: contain;
+        background-position: left, top;
+        background-repeat: no-repeat;
+    }
+
+    #contact {
+        min-height: 850px;
+        width: 100%;
+        background-image: url(../img/contact.jpg);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .contact-form-btn {
+        background-color: #B200FD;
+        border: none;
+        border-radius: 15px;
+        padding: 0 20px;
+        text-align: right;
+        float: unset;
+    }
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+    #contact {
+        padding-bottom: 50px;
+        width: 100%;
+        background-image: url(../img/contact.jpg);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+
+    #contact .col-md-6 {
+        -ms-flex: 0 0 0%;
+        flex: 0 0 0% !important;
+        max-width: 100%;
+    }
+
+}
