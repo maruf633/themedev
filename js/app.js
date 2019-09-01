@@ -66,7 +66,7 @@ $(function () {
 
 
 
-})
+
 
 $('.testimonial_slide').owlCarousel({
     loop: true,
@@ -92,3 +92,8 @@ $('.testimonial_slide').owlCarousel({
             navText: ["<i class='text-danger fa fa-chevron-left'></i>", "<i class='text-danger fa fa-chevron-right'></i>"]
     
         });
+    });
+
+
+
+
