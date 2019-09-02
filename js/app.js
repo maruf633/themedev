@@ -66,6 +66,7 @@ $(function () {
       });
 
 
+// smooth scrolling
 
       if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
       window.onmousewheel = document.onmousewheel = wheel;
@@ -113,7 +114,7 @@ $(function () {
  
 
 
-
+//slider
       $('.testimonial_carousel').owlCarousel({
         loop:true,
         margin:10,
