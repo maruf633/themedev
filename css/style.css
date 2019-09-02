@@ -541,18 +541,18 @@ ul {
     height: 213px;
 }
 
-.owl-dots {
-    height: 3px;
+.owl-carousel button.owl-dot {
+    height: 4px;
     width: 20px;
-    background: #B200FD;
+    background:black;
     display: inline-block;
     margin: 2px;
 
 }
 
 
-.owl-dots .active{
-    background:red;
+.owl-carousel button.owl-dot.active{
+    background:#B200FD;
 }
 
 
