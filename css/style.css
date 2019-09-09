@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+
+
 /* ----------------------------------------------------------------
      [  Start Basics ]
 -----------------------------------------------------------------*/
@@ -7,66 +11,74 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow-x: hidden;
+
+}
+
+.wrap {
+    margin-left: auto;
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
+    margin-right: auto;
+    margin-top: 20px;
+
 }
 
 /*----style heading one ----*/
 h1 {
-    font-family: ;
+    font-family: 'Montserrat', sans-serif;
     font-size: 60px;
-    font-weight: ;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: ;
-    line-height: ;
+    letter-spacing: unset;
+    line-height: unset;
 }
 
 
 /*----style heading two ----*/
 h2 {
-    font-family: ;
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
-    font-weight: ;
+    font-weight: 500;
     font-style: normal;
-    letter-spacing: ;
-    line-height: ;
+    letter-spacing: unset;
+    line-height: unset;
 }
 
 
 /*----style heading three ----*/
 h3 {
-    font-family: ;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-weight: ;
+    font-weight: unset;
     font-style: normal;
-    letter-spacing: ;
-    line-height: ;
+    letter-spacing: unset;
+    line-height: unset;
 }
 
 /*----style heading four ----*/
 h4 {
-    font-family: ;
+    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
-    font-weight: ;
+    font-weight: unset;
     font-style: normal;
-    letter-spacing: ;
-    line-height: ;
+    letter-spacing: unset;
+    line-height: unset;
 }
 
 
 /*----style body text----*/
 p {
-    font-family: ;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: ;
+    font-weight: unset;
     font-style: normal;
-    letter-spacing: ;
-    line-height: ;
+    letter-spacing: unset;
+    line-height: unset;
 }
 
 
@@ -111,7 +123,7 @@ hr {
     color: #B400FF;
     display: inline-flex;
     padding-right: 10px;
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
 }
 
@@ -120,11 +132,15 @@ hr {
 }
 
 .fab {
+    background-color: #B400FF;
     border-radius: 100%;
-    color: #B400FF;
-    overflow-x: hidden;
+    color: white;
+    padding: 6px 8px 6px 8px;
 }
 
+#footer .fab {
+    color: rgb(255, 255, 255);
+}
 
 /*----style list----*/
 
@@ -151,35 +167,51 @@ ul {
 /* ----------------------------------------------------------------
      [ Start Navbar ]
 -----------------------------------------------------------------*/
+.navbar {
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.804)
+
+}
+
 .nav {
     z-index: 100000 !important;
     position: relative;
 }
 
 .nav-item {
-    color: #000;
+    color:  rgb(12, 12, 12);
     line-height: 15px;
-    margin-top: 50px;
-    font-size: 24px;
+    margin-top: 30px;
+    font-size: 18px;
 }
 
 .nav-item a {
-    color: #000;
-    padding: 5px 25px;
+    color: rgba(20, 20, 20, 0.76) !important;
+    padding: 7px 25px !important;
     line-height: 15px;
+    font-weight: 500;
+    display: inline-block;
 }
 
-.nav-item .active {
-    background-color: #B200FD;
-    color: #fff;
+li.active a{
+    /* background-color: #B200FD; */
+    color: #B200FD !important;
     border-radius: 15px;
+    border-bottom: 2px solid #B200FD;
+}
+
+.nav-item .active{
+    /* background-color: #B200FD; */
+    color: #B200FD !important;
+    border-radius: 15px;
+    border-bottom: 2px solid #B200FD;
 }
 
 .nav-item a:hover {
-    background-color: #B200FD;
-    color: #fff !important;
-    border-radius: 15px;
+    /* background-color: #B200FD; */
+    color: #B200FD !important;
     cursor: pointer;
+    
 }
 
 /* ----------------------------------------------------------------
@@ -215,8 +247,56 @@ ul {
 /*----hero image Description----*/
 .slogan {
     margin-top: 90%;
+
 }
 
+.slogan .icon {
+    color: #B400FF;
+    display: inline-flex;
+    padding-right: 10px;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.word {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    font-size: 36px;
+    color: #B200FD;
+    
+  }
+  .text{
+      margin-top: -20px; 
+  }
+
+  .text p{
+    text-transform: uppercase;
+}
+  
+  .letter {
+    display: inline-block;
+    position: relative;
+    /* float: left; */
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  
+  .letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  .letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
 /*---michel jhon photo---*/
 .john img {
     width: 410px;
@@ -226,6 +306,12 @@ ul {
     float: right;
     padding: 0px;
 }
+
+
+
+
+
+
 
 /* ----------------------------------------------------------------
      [ Start About Me ]
@@ -240,7 +326,6 @@ ul {
     background-size: cover;
     background-position: center, top;
     background-repeat: no-repeat;
-    /* background-attachment:  fixed !important; */
 }
 
 /*----style bio pragraph----*/
@@ -286,7 +371,6 @@ ul {
 }
 
 .about-progress-item {
-
     text-align: left;
 }
 
@@ -367,7 +451,7 @@ ul {
     min-height: 415px;
     width: 100%;
     background-image: url(../img/education.jpg);
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center, top;
     background-repeat: no-repeat;
 }
@@ -482,23 +566,59 @@ ul {
 }
 
 /*----style Portfolio grid views split stack slide----*/
+.grid {
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .element-item {
-    display: flex;
-    width: 261px;
-    height: 191px;
-    padding: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 25%;
+    display: block;
+    float: left;
+    padding: 7px;
 }
 
 /*----style Portfolio grid image border frame etc----*/
-.element-item img {
-    border-radius: 15px;
-    box-shadow: 3px 5px 7px 0px rgba(0, 0, 0, 0.2);
-    padding: 0px;
-    position: center;
+.img-responsive {
+    display: none;
 }
 
+.gallery-poster {
+    padding-bottom: 100%;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-size: cover;
+
+}
+
+.element-item:hover .gallery-poster {
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+
 /*----style Portfolio grid image mouseover----*/
-.element-item img:hover {
+/* .element-item img:hover {
     width: 300px;
     height: 350px;
     border-radius: 15px;
@@ -506,8 +626,7 @@ ul {
     padding: 0px;
     display: flex;
     z-index: 1;
-}
-
+} */
 /* ----------------------------------------------------------------
      [ End Portfolio Content ]
 -----------------------------------------------------------------*/
@@ -535,7 +654,7 @@ ul {
 }
 
 .owl-carousel .owl-item img {
-    display: inline-table;
+    display: inline-block;
     /* width: 12%; */
     width: auto;
     height: 213px;
@@ -556,6 +675,78 @@ ul {
 }
 
 
+/* .qoute {
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+    ;
+    text-align: left;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    box-shadow: 3px 5px 7px 0 rgba(0, 0, 0, 0.2);
+    display: block;
+
+}
+
+.qoute-top {
+    display: flex;
+    position: relative;
+
+
+
+}
+
+.qoute img {
+    height: 100px;
+    width: 100px;
+    /* border-radius: 100px; 
+    left: 0px;
+    top: 0px;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.qoute-top-tilte {
+    width: 74%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.qoute-bottom {
+    position: relative;
+    width: 100%;
+    display: inline;
+
+}
+
+
+.testimonial_slide {
+    display: flex;
+}
+
+.owl-carousel .owl-item .qoute-top-img img {
+    display: block;
+    width: 100px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    background: 0 0;
+    color: #B200FD !important;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav .text-danger {
+    color: #B200FD !important;
+} */
+
 
 /* ----------------------------------------------------------------
      [ End testimonials ]
@@ -571,11 +762,11 @@ ul {
      [ start  contact Content ]
 -----------------------------------------------------------------*/
 #contact {
-    min-height: 446px;
+    min-height: 600px;
     width: 100%;
     background-image: url(../img/contact.jpg);
     background-size: cover;
-    background-position: center, top;
+    background-position:bottom;
     background-repeat: no-repeat;
 }
 
@@ -611,34 +802,35 @@ ul {
 }
 
 .input-field {
-    width: 337px;
+    width: 100%;
     height: 39px;
     margin-bottom: 19px;
-    border: 2px solid #B200FD;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-.fmessage {
-    max-width: 100% !important;
+    border: 1px solid #B200FD;
+    border-radius: 0px;
+    padding: 10px;
 }
 
 #fmessage {
-    width: 337px;
+    width: 100%;
     height: 156px;
 }
 
 .contact-form-btn {
     background-color: #B200FD;
     border: none;
-    border-radius: 15px;
-    padding: 0 20px;
+    border-radius: 5px;
+    padding: 5px 36px;
     text-align: right;
     float: right;
+    color: #fff;
+    box-shadow: -1px 4px 9px 0px #b200fd8c;
 }
 
+
+/*-----------------Start Footer------------------*/
 #footer {
-    background-color: #DEDEDE;
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -702,8 +894,9 @@ ul {
 
     #hero-image {
         z-index: 99999;
-        margin-top: -100px;
+        margin-top: -50px;
         min-height: 700px;
+        height: auto;
         width: 100%;
         background-image: url(../img/hero.jpg);
         background-size: contain;
@@ -720,6 +913,19 @@ ul {
 
     .slogan {
         margin-top: 25%;
+    }
+
+    .word {
+        margin-left: 66px;
+        position: absolute;
+        width: 250px;
+        opacity: 0;
+        font-size: 25px;
+        color: #B200FD;
+    }
+    .text {
+        position: absolute;
+        margin-top: 0px;
     }
 
     .john img {
@@ -799,7 +1005,6 @@ ul {
         top: 50%;
         border-radius: 50%;
         z-index: 1;
-        left: 49%;
         display: none;
     }
 
@@ -832,14 +1037,7 @@ ul {
         background-size: contain;
         background-position: left, top;
         background-repeat: no-repeat;
-
     }
-
-    
-   
-
-
-    
 
     #contact {
         min-height: 850px;
@@ -852,17 +1050,43 @@ ul {
 
     .contact-form-btn {
         background-color: #B200FD;
-        border: none;
-        border-radius: 15px;
-        padding: 0 20px;
-        text-align: right;
-        float: unset;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 36px;
+    text-align: right;
+    float: right;
+    color: #fff;
+    box-shadow: -1px 4px 9px 0px #b200fd8c;
     }
 
 
 }
 
 @media only screen and (max-width: 1200px) {
+
+    .element-item {
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        display: block;
+        float: left;
+        padding: 7px;
+    }
+
+
+    /*----style education timeline mid circle or round shape on the violate verticle line----*/
+    .container-left:after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: #B400FF;
+        top: 50%;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+
     #contact {
         padding-bottom: 50px;
         width: 100%;
@@ -880,6 +1104,3 @@ ul {
     }
 
 }
-
-
-  /*---- smooth page----*/

@@ -1,4 +1,5 @@
 $(function () {
+
     // init Isotope
     var $grid = $('.grid').isotope({
         // options
@@ -16,6 +17,26 @@ $(function () {
     $(function () {
         $(".timeline-Widget").css("backgound", "red");
     });
+
+    $('.testimonial_section').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay:true,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        },
+        navText: ["<i class='text-danger fa fa-chevron-left'></i>", "<i class='text-danger fa fa-chevron-right'></i>"]
+        
+    })
 
 
     $('.about_slider').owlCarousel({
@@ -45,97 +66,89 @@ $(function () {
 
 
 
-    //nav menu area
+})
 
-    $('#navbarNav a').click(function (idnone) {
-        idnone.preventDefault();
-        var hash = this.hash;
-        var position = $(hash).offset().top;
-        $('html').animate({
-          scrollTop: position
-        }, 900);
-      })
+$('.testimonial_slide').owlCarousel({
+    loop: true,
+            margin: 10,
+             autoplay:false,
+             autoplayTimeout:false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true
+                }
+            },
+            navText: ["<i class='text-danger fa fa-chevron-left'></i>", "<i class='text-danger fa fa-chevron-right'></i>"]
+    
+        });
 
 
+//<!-- text changer js -->
+        var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
 
-       //body scroll 
-       $("body").niceScroll({
-        cursorcolor: "#B300FE",
-        cursorwidth: "10px",
-  
-      });
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
 
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
 
-// smooth scrolling
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+		cw[i].className = 'letter out';
+  }, i*80);
+}
 
-      if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
-      window.onmousewheel = document.onmousewheel = wheel;
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+		nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
   
-      function wheel(event) {
-        var delta = 0;
-        if (event.wheelDelta) delta = event.wheelDelta / 120;
-        else if (event.detail) delta = -event.detail / 3;
-  
-        handle(delta);
-        if (event.preventDefault) event.preventDefault();
-        event.returnValue = false;
-      }
-  
-      var goUp = true;
-      var end = null;
-      var interval = null;
-  
-      function handle(delta) {
-        var animationInterval = 20; //lower is faster
-        var scrollSpeed = 30; //lower is faster
-  
-        if (end == null) {
-          end = $(window).scrollTop();
-        }
-        end -= 20 * delta;
-        goUp = delta > 0;
-  
-        if (interval == null) {
-          interval = setInterval(function () {
-            var scrollTop = $(window).scrollTop();
-            var step = Math.round((end - scrollTop) / scrollSpeed);
-            if (scrollTop <= 0 ||
-              scrollTop >= $(window).prop("scrollHeight") - $(window).height() ||
-              goUp && step > -1 ||
-              !goUp && step < 1) {
-              clearInterval(interval);
-              interval = null;
-              end = null;
-            }
-            $(window).scrollTop(scrollTop + step);
-          }, animationInterval);
-        }
-      }
- 
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
 
 
 //slider
-      $('.testimonial_carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        dots:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:1
-            },
-            1000:{
-                items:1
-            }
-        }
-    })
-
-
-    });
-
-
-
-
